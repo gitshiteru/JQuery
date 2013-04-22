@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+<!--
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+-->
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<title>Up and Running with JQuery Mobile</title>
+	</head>
+	
+	<body>
+
+        <div data-role="page" id="main">
+			<div data-role="header" >
+				<h1>Interactive</h1>
+			</div>
+	        <div data-role="content" >
+				<ul data-role="listview">
+					<li> <!-- Supposed to work, but not, maybe a bug -->
+						<a href="#book1">書名１</a>
+						<span class="ui-li-aside">著者１</span>
+					</li> 
+					<li> <!-- Work aroung do above-->
+						<a href="#book2">書名2
+						<span class="ui-li-aside">著者2</span></a>
+					</li>
+					<li>
+						<a href="#book3"><img src="./images/02333-4-thumb-208xauto-23142.jpg">書名３
+						<p>著者３</p>
+							<span class="ui-li-aside">投票数</span>
+							<span class="ui-li-count">573</span></a>
+					</li>
+					<li>
+						<a href="#book4"><img src="./images/02221-4-thumb-208xauto-22932.gif"></a>
+						<h2>書名</h2>
+						<p>解説：iPhone、フェースブック等々、ヒット商品はすべてコンセプトが光っている。</p>
+					</li>
+					
+				</ul>
+		    </div>
+	</body>
+</html>

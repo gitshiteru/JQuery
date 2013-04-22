@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>New JQuery Project</title>
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, inital-scale=1, user-scalable=no">
+
+    </head>
+    <body>
+        
+        <div data-role="page" id="page1">
+        	
+			<div data-role="header">
+				<h1>First page</h1>
+			</div>
+	        <div data-role="content">
+	        	<p>This is the main content of the page.</p>
+	        	<p>You can go to the <a href="#page2" data-transition="flip">second page</a>.</p>
+	        	<p><a href="./dialog-messages.html" data-rel="dialog" data-transition="pop">Show dialog message</a>.</p>
+	        </div>
+	        <div data-role="footer">
+	        	<h4>This is the footer.</h4>
+	        </div>
+        </div> <!--end of page1 --> 
+         <div data-role="page" id="page2" data-title="This is the second page" 
+         data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
+        	
+			<div data-role="header">
+				<h1>Second page</h1>
+			</div>
+	        <div data-role="content">
+	        	<p>This is the main content of the secondpage.</p>
+	        	<p>You can go back using the header's button, <a href="#page1">back to page1</a>
+	        		or using your browser's back button.
+	        	</p>
+	        </div>
+	        <div data-role="footer">
+	        	<h4>This is the footer.</h4>
+	        </div>
+        </div> <!--end of page2 -->
+        
+    </body>
+</html>

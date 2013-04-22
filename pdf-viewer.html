@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<!--you must place custom javascirpt files between core jquiery and jquery mobile js. -->
+				<script type="text/javascript" src="./viewer/jquery.gdocsviewer.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<title>Up and Running with JQuery Mobile</title>
+		
+
+
+		<style type="text/css">
+		/* Style the second URL with a red border */
+		#test-gdocsviewer {
+			border: 5px red solid;
+			padding: 20px;
+			width: 300px;
+			background: #ccc;
+			text-align: center;
+		}
+		/* Style all gdocsviewer containers */
+		.gdocsviewer {
+			margin:0px;
+		}
+		</style>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			$('a.embed').gdocsViewer({width: 300, height: 600});
+			*/
+			$('a.embed').gdocsViewer({width: 300, height: 500});
+			$('#embedURL').gdocsViewer({width: 300, height: 500});
+		});
+		</script>
+
+		<title>Up and Running with JQuery Mobile</title>
+	</head>
+	
+	<body>
+
+        <div data-role="page" data-fullscreen="true">
+<!--			
+			<div data-role="header" data-position="fixed">
+				<h1>Book Properties</h1>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#index" data-icon="home">Home</a></li>
+						<li><a href="#contacts" data-icon="search">Contacts</a></li>
+						<li><a href="#events" data-icon="info">Events</a></li>
+						<li><a href="#news" data-icon="grid">News</a></li>
+						
+					</ul>
+				</div>
+			</div>
+-->
+	        <div data-role="content">
+	
+<!--           ローカルはこのプラグインからは見えない
+	        	<a href="インターネットのホストにファイルをおく" class="embed">Download file</a>
+
+				
+	        	<a href="http://localhost/~toshio/JQuery/tsunamito_ningen.pdf" id="embedURL">Download file</a>
+-->
+		
+			<div id="embedURL-gdocsviewer" class="gdocsviewer">
+				<iframe src="http://docs.google.com/viewer?embedded=true&amp;
+				url=http%3A%2F%2Fbookers.zzl.org%2FJQuery%2Ftsunamito_ningen.pdf%23toolbar%3d0%26scrollbar%3d1%26navpanes%3d0%26page%3d0%26view%3dFitV" width="320" height="450" style="border: none;"></iframe>
+			</div>	  
+
+	        </div>
+	        
+	        <div data-role="footer" data-position="fixed">
+	        	
+	        	<div data-role="navbar">
+	        		<ul>
+						<li><a href="#index" data-icon="home" class="ui-btn-active">Home</a></li>
+						<li><a href="#contacts" data-icon="search">Contacts</a></li>
+						<li><a href="#events" data-icon="info">Events</a></li>
+						<li><a href="#news" data-icon="grid">News</a></li>	        			
+	        		</ul>
+	        	</div>
+	        </div>
+        </div> <!--page --> 
+	</body>
+</html>

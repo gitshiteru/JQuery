@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+
+		<meta name="viewport" content="width=device-width, inital-scale=1" >
+		<title>Up and Running with JQuery Mobile</title>
+	</head>
+
+	<body>
+
+        <div data-role="page" id="home">
+			<div data-role="header" >
+				<h1>Slider</h1>
+		</div>
+		<div data-role="content">
+			<form action="send.php" action="get">
+
+
+		        <div data-role="fieldcontainer">				
+					<label for="choice" >Your choices</label>
+					<select id="choice" name="choice">
+						<option value="1">option 1</option>
+						<option value="2">option 2</option>
+						<option value="3">option 3</option>
+						<option value="4">option 4</option>
+						<option value="5">option 5</option>
+					</select>			
+			    </div>
+
+
+		        <div data-role="fieldcontainer">				
+					<label for="multi-choice" >Multiple Selection</label>
+					<select id="multi-choice" name="multi-choice" multiple>
+						<option value="1">option 1</option>
+						<option value="2">option 2</option>
+						<option value="3">option 3</option>
+						<option value="4">option 4</option>
+						<option value="5">option 5</option>
+					</select>			
+			    </div>
+				
+				<input type="submit" value="send" data-theme="a">
+			</form>
+	   </div>
+	</body>
+</form>
+</html>
