@@ -55,7 +55,8 @@
 				<h1>本の詳細</h1>
 				<div data-role="navbar">
 					<ul>
-						<li><a href="/JQuery/books/bocchan/bocchan_online.html" data-icon="home">読む</a></li>
+						<!-- next line must have target property to take out list to fit to the page-->						
+						<li><a href="/JQuery/books/bocchan/bocchan_online.html" data-icon="home" target="_self" >読む</a></li>
 						<li><a href="#vote" data-icon="search">評価する</a></li>
 					</ul>
 				</div>
@@ -136,7 +137,7 @@
         
         <div data-role="page" id="vote">　
 			<div data-role="header" >
-				<a href="#description">戻る</a>
+				<a href="#book-1">戻る</a>  <!-- destination should be contraled by program. -->
 				<h1>この本の評価</h1>
 			</div>
 			<div data-role="content">
