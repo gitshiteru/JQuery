@@ -23,31 +23,16 @@
     </head>
    
     <body>
-         <div data-role="page" id="a-book" data-fullscreen="true" style="min-width: 320px;"> 
          <div data-role="page" id="a-book" data-fullscreen="true"> 
 	        <div data-role="header" data-position="fixed">
 	        	<a href="/JQuery/prototype3.html#book-1">戻る</a>  <!-- destination should be contraled by program. -->
 	        	<h1>タイトル</h1>
 	        </div>	
 	        <div data-role="content">
-                    <iframe src="http://pdf.bookichiba.com/zine/php/simple_document.php?doc=gingatetsudono_yoru.pdf"
                 <object data="http://pdf.bookichiba.com/zine/php/simple_document.php?doc=gingatetsudono_yoru.pdf"
 		        	 width="100%" height="100%">
-		        	</iframe>
 		        </object>
-
 			</div>	
-	        <div data-role="footer" data-position="fixed">
-	        	
-	        	<div data-role="navbar">
-	        		<ul>
-						<li><a href="#lists" data-icon="home" >本一覧</a></li>
-						<li><a href="#a-book" data-icon="search" class="ui-btn-active">読書</a></li>
-						<li><a href="#events" data-icon="info">評価</a></li>
-						<li><a href="#news" data-icon="grid">皆の意見</a></li>        			
-	        		</ul>
-	        	</div>
-	        </div>
         </div> <!-- end of a-book page -->        
     </body>
 </html>
